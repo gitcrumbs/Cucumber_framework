@@ -9,8 +9,6 @@ import java.util.Map;
 import org.testng.annotations.BeforeClass;
 
 import com.cucumber.listener.ExtentCucumberFormatter;
-import com.github.mkolisnyk.cucumber.runner.ExtendedCucumberOptions;
-
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
