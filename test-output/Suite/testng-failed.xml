@@ -9,7 +9,7 @@
       <class name="runners.PositiveTest">
         <methods>
           <include name="setUpClass"/>
-          <include name="feature" invocation-numbers="0"/>
+          <include name="feature" invocation-numbers="1"/>
           <include name="setup"/>
           <include name="tearDownClass"/>
         </methods>

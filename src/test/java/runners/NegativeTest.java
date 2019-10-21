@@ -19,7 +19,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @CucumberOptions(
         plugin = {"json:target/negative/cucumber.json", "pretty", "html:target/negative/cucumber.html","com.cucumber.listener.ExtentCucumberFormatter"},
-        features = "C:\\Users\\ADMIN\\Downloads\\cucumber-testing-master\\src\\test\\resources\\FeatureFiles",
+        features = "\\src\\test\\resources\\FeatureFiles",
         glue = "steps",
         tags = {"@Used-Car-Search"}        
         )

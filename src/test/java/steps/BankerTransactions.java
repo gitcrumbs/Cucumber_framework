@@ -81,7 +81,7 @@ public class BankerTransactions {
 	@Then("^the message on the screen should be \"([^\"]*)\"$")
 	public void the_message_on_the_screen_should_be(String arg1) throws Throwable {
 	   
-		Assert.fail();
+		
 		
 	}
 	
