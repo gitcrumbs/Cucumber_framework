@@ -1,5 +1,6 @@
 package pages.actions;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -17,6 +18,7 @@ public class BankerTransactionActions {
 	BankerTransactionLocators banktransactionlocators = null;
 	SeleniumHelper seleniumhelper = new SeleniumHelper();
 	private SoftAssert sAssert;
+	Logger logInformation = Logger.getLogger(this.getClass().toString());
 
 	public BankerTransactionActions() {		
 		
@@ -28,12 +30,13 @@ public class BankerTransactionActions {
 
 		try {
 			if (banktransactionlocators.loginpagebutton != null) {
-				banktransactionlocators.loginpagebutton.click();
+				banktransactionlocators.loginpagebutton.click();				
+				logInformation.info("Loaded the Browser Url");
 
 			}
 		} catch (Exception e) {
 
-			//
+			logInformation.info("Exception on button click for button click"+e.getMessage());
 
 		}
 

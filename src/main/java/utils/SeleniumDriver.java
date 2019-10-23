@@ -4,6 +4,7 @@ package utils;
 
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -24,10 +25,10 @@ public class SeleniumDriver {
     public final static int TIMEOUT = 30;
     public final static int PAGE_LOAD_TIMEOUT = 50;
     private static NgWebDriver ngDriver;
-
+   
     private  SeleniumDriver() {
-
     	
+    	System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/src/test/resources/Executables/chromedriver.exe");
     	driver = new ChromeDriver();
     	ngDriver = new NgWebDriver((JavascriptExecutor) driver);
 		
@@ -43,7 +44,7 @@ public class SeleniumDriver {
 
     public static void openPage(String url) {
     	System.out.println(url);
-    	System.out.println(driver);
+    	System.out.println(driver);    	
         driver.get(url);
     }
 

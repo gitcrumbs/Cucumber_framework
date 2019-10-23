@@ -10,7 +10,7 @@
   <test name="Test">
     <classes>
       <class name="runners.PositiveTest"/>
-      <class name="runners.FailureRerun"/>
+      <!-- <class name="runners.FailureRerun"/> -->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -15,7 +15,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 @CucumberOptions(plugin = { "json:target/positive/cucumber.json", "pretty", "html:target/positive/cucumber.html",
 		"com.cucumber.listener.ExtentCucumberFormatter",
 		"rerun:rerun/failed_scenarios.txt" }, features = {
-				"src/test/resources/FeatureFiles" }, glue = "steps", tags = { "@Banker-Transactions,@Search-Cars" })
+				"src/test/resources/FeatureFiles" }, glue = "steps", tags = { "@Smoke-Test" })
 
 
 

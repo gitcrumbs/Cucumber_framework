@@ -1,6 +1,6 @@
 
 
-@Search-Cars
+@Search-Cars @Smoke-Test
 Feature: Acceptance testing to validate Search Cars Page is working.
   In order to validate that 
   the Search Cars page is working

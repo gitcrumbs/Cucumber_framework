@@ -1,6 +1,6 @@
 
 
-@Banker-Transactions
+@Banker-Transactions @Smoke-Test 
 Feature: Acceptance testing to validate Select Banker and Create Deposit
   In order to validate that 
   the Deposit Amount is working
@@ -21,5 +21,10 @@ Feature: Acceptance testing to validate Select Banker and Create Deposit
       | 50000  |
       | 70000  |
       | 80000  |
-    Then the message on the screen should be "Deposit Successful" 
+    Then the message on the screen should be <Message1> and <Message2> 
+    |Successful_One | Message_One |
+    |Successful_Two | Message_Two |
+    |Successful_Three | Message_Three |
+    
 
+ 
